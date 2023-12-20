@@ -1,0 +1,45 @@
+:root {
+    --teal: #00b4b6;
+    --teal-dark: #008c8e;
+    --teal-darker: #105455;
+    --teal-light: #00d7d9;
+    --teal-lighter: #e6fafa;
+    --header-height: 70px;
+    --header-height-mobile: 60px;
+
+    --font-size: 1rem;
+    --font-size-small: 0.8rem;
+    --font-size-large: 1.2rem;
+    --font-size-xlarge: 1.5rem;
+    --font-size-xxlarge: 2rem;
+    --font-size-xxxlarge: 3rem;
+
+    --font-family: 'Roboto', monospace;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    font-size: var(--font-size-large);
+    font-weight: 600;
+}
+
+header {
+    background-color: var(--teal-darker);
+    height: var(--header-height);
+    color: white;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size-xxlarge);
+}
+
+#spline-content {
+    height: calc(100vh - var(--header-height));
+    width: 100%;
+    background-color: var(--teal-lighter);
+    display: grid;
+    place-items: center;
+    position: relative;
+}
